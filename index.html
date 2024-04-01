@@ -3,7 +3,6 @@
 <!-- Este é o DTD do HTML5. -->
 <!-- Document Type Definition é a instrução que vai orientar o browser a carregar o conjunto correto de bibliotecas da versão do HTML em questão. -->
 
-
 <html lang="pt-br">
   <!-- primeiro filho do html = head. -->
   <head>
@@ -12,46 +11,7 @@
     <meta name="viewport" content="width:device-width,initial-scale=1.0" />
     <title>Página Básica</title>
 
-    <style>
-      *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      #cabecalho > h1{
-        text-align: center;
-            color: #fff;
-            background-color: #100000 !important;
-            padding: 20px 0;
-            box-shadow: 4px 3px 5px #41416d;
-            border-radius: 5px;
-            font-size: 64px;
-      }
-
-      ul{
-        list-style: none;
-        width: 135%;
-      }
-
-      #cabecalho nav{
-        margin: 15px 0;
-      }
-    
-      #cabecalho  li {
-        display: inline-block;
-        margin: 0  8%;
-      }
-
-     #cabecalho  li img {
-      display: block;
-      width: 50%;
-      min-width: 10%;
-      }
-      
-
-    </style>
-
+    <link rel="stylesheet" href="./css/estilo.css" />
   </head>
   <!-- segundo filho do html = body -->
   <body>
@@ -59,9 +19,10 @@
       <!-- O container é uma div que serve como contêiner geral para todo o conteúdo da página. -->
       <header id="cabecalho">
         <h1>Minha Página</h1>
-        <nav>
+
+        <nav id="menu">
           <ul>
-            <li>
+            <li class="link">
               <a href="./paginas/help.html">
                 <img
                   src="./img/help.png"
@@ -69,23 +30,25 @@
                 />
               </a>
             </li>
-            <li>
+            <li class="link">
               <a href="./paginas/about.html">
                 <img src="./img/about.png" alt="Letra i em um circulo." />
               </a>
             </li>
-            <li>
-              <a href="#contact"> <img src="./img/contact.png" alt="Envelope de carta." /> </a>
+            <li class="link">
+              <a href="#contact">
+                <img src="./img/contact.png" alt="Envelope de carta." />
+              </a>
             </li>
           </ul>
         </nav>
-      </header> 
+      </header>
 
       <hr />
 
       <section id="conteudo-principal">
         <div>
-          <h1>HELP</h1>
+          <h2>HELP</h2>
           <p>
             Help - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
             ipsam vero animi corporis modi quos, provident alias. Dicta ea
